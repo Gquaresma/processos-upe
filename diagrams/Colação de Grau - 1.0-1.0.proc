@@ -160,7 +160,7 @@
           <contract xmi:type="process:Contract" xmi:id="_xVZpRsivEe2XobZhMTbPTQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xVZpScivEe2XobZhMTbPTQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_xVfI0MivEe2XobZhMTbPTQ" name="Fazer reintegração do aluno" outgoing="_xXmBoMivEe2XobZhMTbPTQ" incoming="_xXiXQMivEe2XobZhMTbPTQ" overrideActorsOfTheLane="false" priority="1">
+        <elements xmi:type="process:Task" xmi:id="_xVfI0MivEe2XobZhMTbPTQ" name="Fazer reintegração do aluno(processo externo)" outgoing="_xXmBoMivEe2XobZhMTbPTQ" incoming="_xXiXQMivEe2XobZhMTbPTQ" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xVfI0sivEe2XobZhMTbPTQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xVfI0civEe2XobZhMTbPTQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xVfI08ivEe2XobZhMTbPTQ" name="" content="" returnTypeFixed="true"/>
@@ -374,7 +374,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_xVfv4MivEe2XobZhMTbPTQ" type="3005" element="_xVfI0MivEe2XobZhMTbPTQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_xVfv4sivEe2XobZhMTbPTQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVfv4civEe2XobZhMTbPTQ" x="2023" y="129"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVfv4civEe2XobZhMTbPTQ" x="2023" y="129" width="140" height="70"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_xVl2gMivEe2XobZhMTbPTQ" type="3003" element="_xVlPcMivEe2XobZhMTbPTQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_xVmdkMivEe2XobZhMTbPTQ" type="5025">
