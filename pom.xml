@@ -94,14 +94,14 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.bonitasoft.connectors</groupId>
-      <artifactId>bonita-connector-database</artifactId>
-      <version>2.0.3</version>
-    </dependency>
-    <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.2.19</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-database</artifactId>
+      <version>2.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.company.model</groupId>

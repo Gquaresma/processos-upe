@@ -613,12 +613,22 @@
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
+    <group name="UPE">
+      <displayName>UPE</displayName>
+    </group>
+    <group name="Discentes" parentPath="/UPE">
+      <displayName>Discentes</displayName>
+    </group>
+    <group name="Docentes" parentPath="/UPE">
+      <displayName>Docentes</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
       <userName>william.jobs</userName>
-      <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <roleName>Escolaridade</roleName>
+      <groupName>Docentes</groupName>
+      <groupParentPath>/UPE</groupParentPath>
     </membership>
     <membership>
       <userName>april.sanchez</userName>
@@ -634,9 +644,9 @@
     </membership>
     <membership>
       <userName>walter.bates</userName>
-      <roleName>member</roleName>
-      <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <roleName>Aluno</roleName>
+      <groupName>Discentes</groupName>
+      <groupParentPath>/UPE</groupParentPath>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
