@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="UPE">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="aluno1">
+      <firstName>aluno</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Escolaridade1">
+      <firstName>escolaridade</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="reitoria1">
+      <firstName>reitoria</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Aluno">
+      <displayName>Aluno</displayName>
+    </role>
+    <role name="Funcionario Escolaridae">
+      <displayName>Funcionário Escolaridade</displayName>
+    </role>
+    <role name="Funcionario Reitoria">
+      <displayName>Funcionário Reitoria</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Aluno">
+      <displayName>Aluno</displayName>
+    </group>
+    <group name="Escolariade">
+      <displayName>Escolariade</displayName>
+    </group>
+    <group name="Reitoria">
+      <displayName>Reitoria</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>aluno1</userName>
+      <roleName>Aluno</roleName>
+      <groupName>Aluno</groupName>
+    </membership>
+    <membership>
+      <userName>Escolaridade1</userName>
+      <roleName>Funcionario Escolaridae</roleName>
+      <groupName>Escolariade</groupName>
+    </membership>
+    <membership>
+      <userName>reitoria1</userName>
+      <roleName>Funcionario Reitoria</roleName>
+      <groupName>Reitoria</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
