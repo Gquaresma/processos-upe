@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_18hXoMiqEe238KCfMTlktQ" name="MyDiagram" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_18hXociqEe238KCfMTlktQ" name="Solicitação">
       <elements xmi:type="process:Lane" xmi:id="_18hXosiqEe238KCfMTlktQ" name="Aluno">
@@ -662,7 +662,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-XuXMtMPEe2ScvBNcNk4oQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_B3gi8MirEe238KCfMTlktQ" name="Escolaridade" actor="_zBnt4NNMEe2JrsTaiIYHzA">
+      <elements xmi:type="process:Lane" xmi:id="_B3gi8MirEe238KCfMTlktQ" name="Escolaridade" actor="_saisMNNMEe2JrsTaiIYHzA">
         <elements xmi:type="process:EndEvent" xmi:id="_c1og0MisEe238KCfMTlktQ" name="Fim1" incoming="_c10HAMisEe238KCfMTlktQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_c1pH4MisEe238KCfMTlktQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_c1og0cisEe238KCfMTlktQ" name="" content="" returnTypeFixed="true"/>
@@ -1330,7 +1330,7 @@
         <targetForm xmi:type="expression:Expression" xmi:id="_6203wNMZEe2ScvBNcNk4oQ" name="processForm" content="0c2b44bf-b5e8-4567-898f-7cd8f40a9a94" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_18hXtsiqEe238KCfMTlktQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_18hXt8iqEe238KCfMTlktQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_pQ9f4NlREe27GL6_vTPO_w" name="solicitacaoForm" content="1df6e2c1-4286-46ae-bf17-ab9e97b421d6" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_18hXuMiqEe238KCfMTlktQ" target="_-XsiANMPEe2ScvBNcNk4oQ" source="_18hXo8iqEe238KCfMTlktQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_18hXuciqEe238KCfMTlktQ"/>
@@ -1385,6 +1385,34 @@
       <actors xmi:type="process:Actor" xmi:id="_saisMNNMEe2JrsTaiIYHzA" name="Aluno" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_zBnt4NNMEe2JrsTaiIYHzA" name="Escolaridade"/>
       <actors xmi:type="process:Actor" xmi:id="_0_P4MNNMEe2JrsTaiIYHzA" name="Reitoria"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_R2tfINlVEe27GL6_vTPO_w" name="Production" version="7.12.0-004" username="aluno1">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_R2uGMNlVEe27GL6_vTPO_w">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_R2uGMdlVEe27GL6_vTPO_w" name="Aluno">
+            <groups xmi:type="actormapping:Groups" xmi:id="_R2uGMtlVEe27GL6_vTPO_w"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_R2uGM9lVEe27GL6_vTPO_w"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_R2uGNNlVEe27GL6_vTPO_w"/>
+            <users xmi:type="actormapping:Users" xmi:id="_R2uGNdlVEe27GL6_vTPO_w"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_R2uGNtlVEe27GL6_vTPO_w" name="Escolaridade">
+            <groups xmi:type="actormapping:Groups" xmi:id="_R2uGN9lVEe27GL6_vTPO_w"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_R2uGONlVEe27GL6_vTPO_w"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_R2uGOdlVEe27GL6_vTPO_w"/>
+            <users xmi:type="actormapping:Users" xmi:id="_R2uGOtlVEe27GL6_vTPO_w"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_R2uGO9lVEe27GL6_vTPO_w" name="Reitoria">
+            <groups xmi:type="actormapping:Groups" xmi:id="_R2uGPNlVEe27GL6_vTPO_w"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_R2uGPdlVEe27GL6_vTPO_w"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_R2uGPtlVEe27GL6_vTPO_w"/>
+            <users xmi:type="actormapping:Users" xmi:id="_R2uGP9lVEe27GL6_vTPO_w"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfIdlVEe27GL6_vTPO_w" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfItlVEe27GL6_vTPO_w" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfI9lVEe27GL6_vTPO_w" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfJNlVEe27GL6_vTPO_w" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfJdlVEe27GL6_vTPO_w" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_R2tfJtlVEe27GL6_vTPO_w" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_18hXvMiqEe238KCfMTlktQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_18hXvciqEe238KCfMTlktQ">
         <name xmi:type="expression:Expression" xmi:id="_18hXvsiqEe238KCfMTlktQ" content="" returnTypeFixed="true"/>
